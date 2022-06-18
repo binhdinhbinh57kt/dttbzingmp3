@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing MP3</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/Fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Fonts/themify/themify-icons.css">
+   
+</head>
+<body>
+    <div class="app grid">
+        <!-- sidebar -->
+        <div class="app__sidebar">
+            <div class="sidebar__logo">
+                <a href="#" class="sidebar__logo-link">
+                    <img src="./assets/img/sidebar/sidebar__logo.svg" alt="" class="sidebar__logo-img hide-on-tablet">
+                    <img src="./assets/img/logos/nav__logo.svg" alt="" class="sidebar__logo-mini">
+                </a>
+            </div>
+            
+            <div class="sidebar__nav ">
+                <ul class="sidebar__nav-list">
+                    <li class="sidebar__nav-item  active">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-address-book sidebar__item-icon"></i>
+                            <span class="sidebar__item-content ">Cá Nhân</span>
+                        </div>
+                        <div class="sidebar__nav-item--play hide-on-mobile">
+                            <i class="fa-solid fa-circle-play sidebar__item-play "></i> 
+                             <div class="sidebar__item-content--des">Cá Nhân</div> 
+                        </div>
+                                 
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-record-vinyl sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">Khám Phá</span>
+                        </div>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-podcast sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">#zingchart</span>
+                        </div>
+                        <div class="sidebar__nav-item--play hide-on-mobile">
+                            <i class="fa-solid fa-circle-play sidebar__item-play "></i> 
+                             <div class="sidebar__item-content--des">#zingchart</div> 
+                        </div>   
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-radio sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">Radio</span>
+                            <span class="sidebar__item-live hide-on-tablet hide-on-mobile">LIVE</span>
+                        </div>
+                        <div class="sidebar__nav-item--play hide-on-mobile">
+                            <i class="fa-solid fa-circle-play sidebar__item-play "></i> 
+                             <div class="sidebar__item-content--des">Radio</div> 
+                        </div>   
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-calendar-days sidebar__item-icon"></i>                       
+                            <span class="sidebar__item-content">Theo Dõi</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="sidebar__horizontal hide-on-mobile"></div>
+            </div>
+
+            <div class="sidebar__subnav hide-on-mobile">
+                <ul class="sidebar__subnav-list">
+                    <li class="sidebar__nav-item sidebar__nav-item-first-child">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-music sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">Nhạc Mới</span>
+                        </div>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-table-cells-large sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">Thể loại</span>
+                        </div>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-star sidebar__item-icon"></i>
+                            <span class="sidebar__item-content">Top100</span>
+                        </div>
+                    </li>
+                    <li class="sidebar__nav-item">
+                        <div class="sidebar__item-text">
+                            <i class="fa-solid fa-video sidebar__item-icon"></i>                       
+                            <span class="sidebar__item-content">MV</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="sidebar__buyvip hide-on-tablet">
+                    <div class="sidebar__buyvip-description">Nghe nhạc không quảng cáo <br>
+                        cùng kho nhạc VIP
+                    </div>
+                    <div class="sidebar__buyvip-btn">NÂNG CẤP VIP</div>
+                </div>
+    
+                <div class="sidebar__library">
+                    <div class="sidebar__library-heading hide-on-tablet">
+                        <span>THƯ VIỆN</span> 
+                        <i class="fa-solid fa-pencil sidebar__library-heading-icon"></i>
+                    </div>
+
+                    <!-- <div class="sidebar__library-adjust">Chỉnh sửa</div> -->
+                    <ul class="sidebar__library-list">
+                        <li class="sidebar__library-item">
+                            <div class="sidebar__library-text">
+                                <i class="fa-solid fa-list-ul sidebar__library-icon "></i>
+                                <span class="sidebar__library-content ">Bài hát</span>
+                            </div>
+                        </li>
+                        <li class="sidebar__library-item">
+                            <div class="sidebar__library-text">
+                                <i class="fa-solid fa-headphones sidebar__library-icon"></i>
+                                <span class="sidebar__library-content">Playlist</span>
+                            </div>
+                        </li>
+                        <li class="sidebar__library-item">
+                            <div class="sidebar__library-text">
+                                <i class="fa-solid fa-clock sidebar__library-icon"></i>
+                                <span class="sidebar__library-content">Gần đây</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+
+            </div>
+            <!-- BUYVIP -->
+            <div class="sidebar__plus">
+                <div class="sidebar__plus-container hide-on-tablet">
+                    <i class="fa-solid fa-plus sidebar__plus-icon"></i>
+                    <div class="sidebar__plus-content">Tạo playlist mới</div>
+                </div>
+
+                <div class="sidebar__plus-expand hide-on-tablet">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="sidebar__plus-shrink hide-on-tablet">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div class="app__container">
+            <div class="app__container-heading">
+                <div class="app__search">
+                    <div class="app__search-btn hide-on-mobile">
+                        <i class="fa-solid fa-arrow-left-long app__search-btn--icon active"></i>
+                        <i class="fa-solid fa-arrow-right-long app__search-btn--icon"></i>
+                    </div>
+                    <div class="app__search-input">
+                        <input type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV..." class="app__input-content">
+                        <i class="ti-search app__input-icon"></i>
+                        <div class="app__search-offer">
+                            <ul class="app__offer-list">
+                                <li class="app__offer-heading">Đề xuất cho bạn</li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">có không giữ</span>
+                                </li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">thương em</span>
+                                </li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">trọn vẹn nghĩa</span>
+                                </li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">karaoke</span>
+                                </li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">ngủ ngon</span>
+                                </li>
+                                <li class="app__offer-item">
+                                    <i class="ti-arrow-top-right app__offer-item--icon"></i>
+                                    <span class="app__offer-item--content">radio</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="app__private">
+                    <ul class="app__private-list">
+                        <li class="app__private-item hide-on-mobile">
+                            <div class="app__private-item-list">
+                               <svg width="20" height="20" class="header__nav-icon" viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%"><stop offset="0%" stop-color="#F81212"></stop><stop offset="100%" stop-color="red"></stop></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stop-color="#00F"></stop><stop offset="100%" stop-color="#0031FF"></stop></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stop-color="#FFA600"></stop><stop offset="100%" stop-color="orange"></stop></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stop-color="#13EFEC"></stop><stop offset="100%" stop-color="#00E8DF"></stop></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path><path id="jggzvnjgfc" d="M0 0H20V20H0z"></path><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlink:href="#qtpqrj1oda"></use></mask><use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda"></use><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlink:href="#jggzvnjgfc"></use></mask><use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use><circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)"></circle><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)"></circle><circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)"></circle><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)"></circle></g></g><use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m"></use></g></svg>
+                               <div class="app__private-item--des">Chủ đề</div>
+                            </div>
+                        </li>
+                        <li class="app__private-item hide-on-mobile">
+                            <div class="app__private-item-list">
+                                <i class="fa-solid fa-gem app__private-item--icon"></i>
+                                <div class="app__private-item--des">Nâng cấp Vip</div>
+                            </div>
+                        </li>
+                        <li class="app__private-item hide-on-mobile">
+                            <div class="app__private-item-list">
+                                <i class="fa-solid fa-arrow-up-from-bracket app__private-item--icon"></i>
+                                <div class="app__private-item--des">Tải lên</div>
+                             </div>
+                        </li>
+                        <li class="app__private-item">
+                            <div class="app__private-item-list app__private-setting--btn">
+                                <i class="fa-solid fa-gear app__private-item--icon"></i>
+                                <div class="app__private-item--des">Cài đặt</div>
+                             </div>
+                             <div class="app__private-setting">
+                                <div class="app__setting--first-child">
+                                    <ul class="app__setting-list">
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-ban"></i>
+                                                <span class="app__setting-item--content">Danh sách chặn</span>
+                                            </div>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-hard-drive"></i>
+                                                <span class="app__setting-item--content">Chất lượng nhạc</span>
+                                            </div>
+                                            <div class="app__setting-item--expand">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                            <ul class="app__setting-child--list">
+                                                <li class="app__setting-child--item active">
+                                                    <div class="app__setting-child--item-wrap">
+                                                        <div class="app__setting-child--item-heading">SQ-128</div>
+                                                        <div class="app__setting-child--item-des">Giảm sử dụng dữ liệu cho các kết nối chậm hơn.</div>
+                                                    </div>
+                                                    <div class="app__setting-child--item-selection">
+                                                        <i class="app__setting-child--item-icon fa-solid fa-check"></i>
+                                                    </div>
+                                                </li>
+                                                <li class="app__setting-child--item">
+                                                    <div class="app__setting-child--item-wrap">
+                                                        <div class="app__setting-child--item-heading">HQ-320</div>
+                                                        <div class="app__setting-child--item-des">Kết hợp tốt nhất giữa việc sử dụng dữ liệu và chất lượng âm thanh.</div>
+                                                    </div>
+                                                    <div class="app__setting-child--item-selection">
+                                                        <i class="app__setting-child--item-icon fa-solid fa-check"></i>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-circle-play"></i>
+                                                <span class="app__setting-item--content">Giao diện</span>
+                                            </div>
+                                            <div class="app__setting-item--expand">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                            <ul class="app__setting-display">
+                                                <li class="app__setting-display--item">
+                                                   <div class="app__display--des">
+                                                        Luôn phát toàn màn hình
+                                                   </div>
+                                                   <div class="app__display--trans">
+                                                        <input type="checkbox" name="" class="app__display--switch-toggle">
+                                                   </div>
+                                                </li>
+                                                <li class="app__setting-display--item ">
+                                                    <div class="app__display--des">
+                                                        Hiệu ứng
+                                                   </div>
+                                                   <div class="app__display--trans">
+                                                        <input type="checkbox" name="" class="app__display--switch-toggle">
+                                                   </div> 
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="app__setting--last-child">
+                                    <ul class="app__setting-list ">
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-circle-info"></i>
+                                                <span class="app__setting-item--content">Giới thiệu</span>
+                                            </div>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-font-awesome"></i>
+                                                <span class="app__setting-item--content">Góp ý</span>
+                                            </div>
+                                        </li>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-phone"></i>
+                                                <span class="app__setting-item--content">Liên hệ</span>
+                                            </div>
+                                        </li>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-rectangle-ad"></i>
+                                                <span class="app__setting-item--content">Quảng cáo</span>
+                                            </div>
+                                        </li>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-file"></i>
+                                                <span class="app__setting-item--content">Thỏa thuận sử dụng</span>
+                                            </div>
+                                        </li>
+                                        <li class="app__setting-item">
+                                            <div class="app__setting-wrap--content">
+                                                <i class="app__setting-item--icon fa-solid fa-shield-halved"></i>
+                                                <span class="app__setting-item--content">Chính sách bảo mật</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                             </div> 
+                        </li>
+                        <li class="app__private-item app__private-item--avatar">
+                            <img src="./assets/img/heading/heading_avat.jpg" alt="" class="app__avatar">
+                            <ul class="app__avatar-list ">
+                                <li class="app__avatar-item">
+                                    <i class="app__avatar-list--icon fa-solid fa-gem"></i>
+                                    <span class="app__avatar-item--content">Nâng cấp vip</span>
+                                </li>
+                                <li class="app__avatar-item">
+                                    <i class="app__avatar-list--icon fa-solid fa-gem"></i>
+                                    <span class="app__avatar-item--content">Mua code vip</span>
+                                </li>
+                                <li class="app__avatar-item app__avatar-item--exit">
+                                    <i class="app__avatar-list--icon fa-solid fa-arrow-right-from-bracket"></i>
+                                    <span class="app__avatar-item--content">Đăng xuất</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>        
+                </div>
+            </div>
+            <div class="app__container-main">
+                <div class="app__main-item active">
+                    <div class="app__main-user">
+                        <img src="./assets/img/heading/heading_avat.jpg" alt="" class="app__main-user--img">
+                        <div class="app__main-user--name">Đinh Thị Thanh Bình</div>
+                    </div>
+                    <div class="app__main-navbar">
+                        <ul class="app__main-navbar--list">
+                            <li class="app__main-navbar--item active">
+                                Tổng quan
+                            </li>
+                            <li class="app__main-navbar--item">
+                                Bài hát
+                            </li>
+                            <li class="app__main-navbar--item">
+                                Playlist
+                            </li>
+                            <li class="app__main-navbar--item hide-on-mobile">
+                                Album
+                            </li>
+                            <li class="app__main-navbar--item ">
+                                MV
+                            </li>
+                            <li class="app__main-navbar--item hide-on-mobile">
+                                Nghệ sĩ
+                            </li>
+                            <li class="app__main-navbar--item hide-on-tablet hide-on-mobile">
+                                Tải lên
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="app__main-content">
+                        <!-- TAB HOME -->
+                        <div class="grid app__main-content--item app__main-content--home active">
+                            <div class="row content__control home__item">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title home__item-title">
+                                            <span>Bài hát</span>
+                                            <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <div class="content__control-header--actions">
+                                            <div class="content__actions-item content__actions-playall">
+                                                <i class="content__actions-icon fa-solid fa-play"></i>
+                                                <span>Phát tất cả</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 m-12 ">
+                                    <div class="home__song">
+                                        <div class="home__song-img">
+                                            <img src="./assets/img/song/song_main/song_main1.jpg" alt="">
+                                        </div>
+                                        <div class="home__song-list">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row home__item">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header home__header-item">
+                                        <div class="content__control-header--title home__item-title">
+                                            <span>Playlist</span>
+                                            <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <div class="home__playlist-slides hide-on-tablet-mobile">
+                                            <div class="playlist__show-slide--hide">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                            <div class="playlist__show-slide--plus">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 m-12 ">
+                                    <div class="playlist__concontainer row no-wrap homeplaylist">
+                                        <div class="col l-2-4 m-4 c-6 home__playlist-item">
+                                            <div class="playlist__concontainer-item">
+                                                <div class="playlist__item-create">
+                                                    <i class="playlist__item-create--icon fa-solid fa-plus"></i>
+                                                    <span class="playlist__item-create--text">Tạo playlist mới</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row home__item">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header home__header-item">
+                                        <div class="content__control-header--title home__item-title">
+                                            <span>Album</span>
+                                            <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <div class="home__album-slides hide-on-tablet-mobile">
+                                            <div class="album__show-slide--hide">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                            <div class="album__show-slide--plus">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="album__concontainer row no-wrap homealbum">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row home__item">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header home__header-item">
+                                        <div class="content__control-header--title home__item-title">
+                                            <span>MV</span>
+                                            <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <div class="home__mv-slides hide-on-tablet-mobile">
+                                            <div class="mv__show-slide--hide">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                            <div class="mv__show-slide--plus">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="mv__container row no-wrap homemv">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row home__item">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header  home__header-item">
+                                        <div class="content__control-header--title home__item-title">
+                                            <span>Nghệ sĩ</span>
+                                            <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <div class="home__artist-slides hide-on-tablet-mobile">
+                                            <div class="artist__show-slide--hide">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </div>
+                                            <div class="artist__show-slide--plus">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="artist__container row no-wrap homeartist">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--song">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>Bài hát</span>
+                                        </div>
+                                        <div class="content__control-header--actions">
+                                            <div class="content__actions-upload hide-on-mobile">
+                                                <i class="content__actions-icon fa-solid fa-upload"></i>
+                                                <span>Tải lên</span>
+                                            </div>
+                                            <div class="content__actions-playall">
+                                                <i class="content__actions-icon fa-solid fa-play"></i>
+                                                <span>Phát tất cả</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="app__song-heading">
+                                        <div class="app__song-heading--title">Bài hát</div>
+                                        <div class="app__song-heading--time">Thời gian</div>
+                                    </div>
+                                    <div class="app__song-list">
+                                        <div class="home__song-item app__song-item">
+                                            <div class="home__song-item--description">
+                                                <div class="song__description-icon">
+                                                    <div class="song__description-icon--music">
+                                                        <i class="fa-solid fa-music"></i>
+                                                    </div>
+                                                    <div class="song__description-icon--screen">
+                                                        <i class="fa-solid fa-display"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home__song-item--img">
+                                                    <img src="./assets/img/song/song_list/song_item1.jpg" alt="" class="song__item-img">
+                                                    <div class="song__img-play">
+                                                        <i class="song__img-play--icon fa-solid fa-play"></i>
+                                                    </div>
+                                                    <div class="song__img-playing">
+                                                        <img src="./assets/img/song/musicplaying.gif" alt="" class="song__img-playing--img">
+                                                    </div>
+                                                </div>
+                                                <div class="home__song-item--name">
+                                                    <div class="home__song-item--namemv">
+                                                        Cứ Chill Thôi
+                                                    </div>
+                                                    <div class="home__song-item--nameauthor">
+                                                        Chillies, Suni Hạ Linh, Rhymastic
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="home__song-item--time">04:30</div>
+                                            <div class="home__song-actions">
+                                                <div class="song__action-item app__lyric">
+                                                    <i class="app__lyric-icon fa-solid fa-microphone"></i>
+                                                    <div class="song__action-item--des">Phát cùng lời bài hát</div>
+                                                </div>
+                                                <div class="song__action-item app__heart">
+                                                    <div class="app__heart-des app__heart--notaction">
+                                                        <i class="fa-solid fa-heart"></i>
+                                                    </div>
+                                                    <div class="app__heart-des app__heart--action">
+                                                        <i class="main__heart-action fa-solid fa-heart"></i>
+                                                    </div> 
+                                                </div>
+                                                <div class="song__action-item app__more">
+                                                    <i class="app__more-icon fa-solid fa-ellipsis"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--playlist">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>Playlist</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 c-12 m-12">
+                                    <div class="playlist__concontainer row hometabplaylist">
+                                        <div class="col l-2-4 m-4 c-6">
+                                            <div class="playlist__concontainer-item">
+                                                <div class="playlist__item-create">
+                                                    <i class="playlist__item-create--icon fa-solid fa-plus"></i>
+                                                    <span class="playlist__item-create--text">Tạo playlist mới</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--album">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>Album</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="album__concontainer row hometabalbum">          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--mv">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>MV</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="mv__container row hometabmv">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--artist">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>Nghệ sĩ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="artist__container row hometabartist">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid app__main-content--item app__main-content--upload">
+                            <div class="row content__control">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="content__control-header">
+                                        <div class="content__control-header--title">
+                                            <span>Danh sách tải lên</span>
+                                        </div>
+                                        <div class="content__control-header--actions">
+                                            <div class="content__actions-upload hide-on-mobile">
+                                                <i class="content__actions-icon fa-solid fa-upload"></i>
+                                                <span>Tải lên</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="upload__container">
+                                        <i class="upload__container-icon ti-music-alt "></i>
+                                        <span class="upload__container-content">Không có bài hát tải lên</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app__main-item">
+                    <div class="explore__main-content grid">
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Có thể bạn muốn nghe</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore_canhear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Lựa chọn hôm nay</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore_choose">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">XONE's CORNER</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore_corner">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading-name">
+                                    <div class="explore__item-heading--img">
+                                        <img src="./assets/img/explore/explore_heard/explore_img_author.jpg" alt="">
+                                    </div>
+                                    <div class="explore__item-heading--des">
+                                        <div class="explore__item-heading--des-text">
+                                            VÌ BẠN ĐÃ NGHE
+                                        </div>
+                                        <div class="explore__item-heading--des-name">
+                                            Nguyễn Trọng Tài
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__heard">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="content__control-header">
+                                    <div class="content__control-header--title home__item-title">
+                                        <span>Radio Nổi Bật</span>
+                                        <i class="content__header-title--icon fa-solid fa-angle-right"></i>
+                                    </div>
+                                    <div class="home__artist-slides hide-on-tablet-mobile">
+                                        <div class="radio__show-slide--hide">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="radio__show-slide--plus">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__radio row no-wrap">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Mixtape Yêu Thích</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore_mixtape">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Nhạc mới mỗi ngày</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore_newday">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__zingchart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__zma">   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Top 100</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__top100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading-name">
+                                    <div class="explore__item-heading--img">
+                                        <img src="./assets/img/explore/explore_hiphop/explore_hiphopavatar.jpg" alt="">
+                                    </div>
+                                    <div class="explore__item-heading--des">
+                                        <div class="explore__item-heading--des-text">
+                                            VÌ BẠN ĐÃ NGHE
+                                        </div>
+                                        <div class="explore__item-heading--des-name">
+                                            Hip-Hop
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__youheard">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Mới Phát Hành</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__newmusic">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__item row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-heading">Sự kiện</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__item-concontainer row no-wrap explore__event">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore__footer row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__partner-heading">Đối tác âm nhạc</div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="explore__footer-concontainer row explore__partner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="app__main-item">
+                    <div class="zingchart__main grid">
+                        <div class="zingchart__main-content row">
+                            <div class="col c-12 l-12 m-12">
+                                <div class="zingchart__main-heading">
+                                    <span>#zingchart</span>
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="zingchart__list">                                
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="zingchart__expand">
+                                    <div class="zingchart__expand-btn">
+                                        Xem top 100
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zingchart__week grid">
+                        <div class="zingchart__week-content row">
+                            <div class="col c-12 l-12 c-12">
+                                <div class="zingchart__week-heading">Bảng xếp hàng tuần</div>
+                            </div>
+                            <div class="col c-12 l-12 c-12">
+                                <div class="zingchart__week-list row">
+                                    <div class="col l-6 m-12 c-12">
+                                        <div class="zingchart__week-item">
+                                            <div class="week__item-heading">
+                                                <span>Việt Nam</span>
+                                                <i class="fa-solid fa-play"></i>
+                                            </div>
+                                            <div class="week__item-list week__item-list--VN">
+                                            </div>
+                                            <div class="week__item-expand">
+                                                <div class="week__item-expand--btn">Xem tất cả</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-12 c-12">
+                                        <div class="zingchart__week-item">
+                                            <div class="week__item-heading">
+                                                <span>US-UK</span>
+                                                <i class="fa-solid fa-play"></i>
+                                            </div>
+                                            <div class="week__item-list week__item-list--USUK">
+                                            </div>
+                                            <div class="week__item-expand">
+                                                <div class="week__item-expand--btn">Xem tất cả</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col l-6 m-12 c-12">
+                                        <div class="zingchart__week-item">
+                                            <div class="week__item-heading">
+                                                <span>K-Pop</span>
+                                                <i class="fa-solid fa-play"></i>
+                                            </div>
+                                            <div class="week__item-list week__item-list--KPOP">
+                                            </div>
+                                            <div class="week__item-expand">
+                                                <div class="week__item-expand--btn">Xem tất cả</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app__main-item">
+                    
+                </div>
+                <div class="app__main-item">
+                   
+                </div>
+                <div class="app__main-item">
+                   
+                </div>
+                <div class="app__main-item">
+                   
+                </div>
+                <div class="app__main-item">
+                    
+                </div>
+                <div class="app__main-item">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- listmucis -->
+        <div class="app_listmusic">
+            
+        </div>
+    </div>
+
+    <div class="player grid">
+        <div class="player__song">
+            <div class="player__song-img">
+                <img src="./assets/img/song/song_list/song_item1.jpg" alt="" class="player__song-img--img">
+            </div>
+            <div class="player__song-description">
+                <div class="player__song-name">Cứ Chill Thôi</div>
+                <div class="player__song-author">Chillies, Suni Hạ Linh, Rhymastic</div>
+            </div>
+            <div class="player__song-heart app__heart">
+                <div class="app__heart-des app__heart--notaction">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="app__heart-des app__heart--action">
+                    <i class="main__heart-action fa-solid fa-heart"></i>
+                </div> 
+            </div>
+            <div class="app__more">
+                <i class="app__more-icon fa-solid fa-ellipsis"></i>
+            </div>
+
+        </div>
+        <div class="player__progress ">
+            <div class="player__progress-actions">
+                <div class="player__action-item player__action-random">
+                    <div class="song__radom-noactive">
+                        <i class="song__radom-icon song__radom-noactive--icon ti-control-shuffle"></i>
+                    </div>
+                    <div class="song__radom-active">
+                        <i class="song__radom-icon song__radom-active--icon ti-control-shuffle"></i>
+                    </div>
+                </div>
+                <div class="player__action-item player__action-back">
+                    <i class="song__radom-icon player__action-back--icon ti-control-skip-backward"></i>
+                </div>
+                <div class="player__action-item player__action-play">
+                    <div class="song__action-play">
+                        <i class="song__action-play--icon fa-solid fa-play"></i>
+                    </div>
+                    <div class="song__action-pause">
+                        <i class="song__action-pause--icon ti-control-pause"></i>
+                    </div>
+                </div>
+                <div class="player__action-item player__action-next">
+                    <i class="song__radom-icon player__action-next--icon ti-control-skip-forward"></i>
+                </div>
+                <div class="player__action-item player__action-repeat">
+                    <div class="song__repeat-noactive">
+                        <i class="song__radom-icon song__repeat-noactive--icon ti-loop"></i>
+                    </div>
+                    <div class="song__repeat-active">
+                        <i class="song__radom-icon song__repeat-active--icon ti-loop"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="player__progress-time">
+                <div class="song__follow-time">00:00</div>
+                <input id="song__progress" class="song__progress" type="range" value="0" step="1" min="0" max="100">
+                <div class="song__total-time">04:30</div>
+                <audio class="audio" src=""></audio>
+            </div>
+        </div>
+        <div class="player__options hide-on-mobile">
+            <div class="song__option-item song__option-video">
+                <i class="song__option-icon song__video--icon fa-solid fa-video"></i>
+            </div>
+            <div class="song__option-item song__option-microphone">
+                <i class="song__option-icon song__microphone-icon fa-solid fa-microphone"></i>
+                <div class="song__option-description song__microphone-description">Xem lời bài hát</div>
+            </div>
+            <div class="song__option-item song__option-screen">
+                <i class="song__option-icon song__screen-icon ti-layout"></i>
+                <div class="song__option-description song__screen-description">Chế độ cửa sổ</div>
+            </div>
+            <div class="song__option-item song__option-volume">
+                <i class="song__volume-icon ti-volume"></i>
+                <div class="song__volume-progress">
+                    <input id="volume__progress" class="volume__progress" type="range" value="0" step="1" min="0" max="100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/nav.js"></script>
+    <!-- HOME -->
+    <script src="./js/home/homeplaylist.js"></script>
+    <script src="./js/home/homealbum.js"></script>
+    <script src="./js/home/homeartist.js"></script>
+    <script src="./js/home/homemv.js"></script>
+    <!-- EXPLORE -->
+    <script src="./js/explore/explorecanhear.js"></script>
+    <script src="./js/explore/explorechoose.js"></script>
+    <script src="./js/explore/explorecorner.js"></script>
+    <script src="./js/explore/exploreheard.js"></script>
+    <script src="./js/explore/exploreradio.js"></script>
+    <script src="./js/explore/exploremixtape.js"></script>
+    <script src="./js/explore/explorenewday.js"></script>
+    <script src="./js/explore/explorezingchart.js"></script>
+    <script src="./js/explore/explorezma.js"></script>
+    <script src="./js/explore/exploretop100.js"></script>
+    <script src="./js/explore/exploreyouheard.js"></script>
+    <script src="./js/explore/explorenewmusic.js"></script>
+    <script src="./js/explore/exploreevent.js"></script>
+    <script src="./js/explore/explorepartner.js"></script>
+    <!-- ZINGCHART -->
+    <script src="./js/zingchart/zingcharttop.js"></script>
+    <script src="./js/zingchart/zingchartVN.js"></script>
+    <script src="./js/zingchart/ziingchartUSUK.js"></script>
+    <script src="./js/zingchart/zingchartKPOP.js"></script>
+    <!-- SONG -->
+    <script src="./js/song.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 

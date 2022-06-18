@@ -1,0 +1,373 @@
+/* Mobile and tablet */
+@media (max-width: 1480px) {
+    .hide-on-tablet-mobile {
+        display: none;
+    }
+
+    /* TAB MV */
+    .mv__img-play {
+        display: flex;
+    }
+
+    .mv__img-exit {
+        display: flex;
+    }
+
+    /* TAB ALBUM */
+    .album__img-actions {
+        display: flex;
+    }
+
+    .img__actions {
+        display: flex;
+    }
+
+    .player__song-heart {
+        display: none;
+    }
+
+    .app__more {
+        display: none;
+    }
+}
+
+
+/* IPAD PRO */
+@media (min-width: 1048px) and (max-width: 1480px) {
+    :root {
+        --listmusic-wight: 0px;
+    }
+
+    .app__search-input {
+        width: 340px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1047px) {
+    /* Nav -  shrink*/
+    :root {
+        --listmusic-wight: 0px;  
+    }
+    
+    .hide-on-tablet {
+        display: none;
+    }
+
+    :root {
+        --sidebar-wight: 70px;    
+    }
+
+    .app {
+        display: flex; 
+        height: calc(100vh - var(--player-height));
+        overflow: hidden;
+    }
+    
+    .app__sidebar {
+        position: fixed;
+        height: calc(100vh - var(--player-height));
+
+    }
+
+    .app__container {
+        width: calc(100% - var(--sidebar-wight));
+        background-color: var(--container-color); 
+        margin-left: var(--sidebar-wight);
+    }
+
+    .sidebar__logo {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .sidebar__logo-icon {
+        display: block;
+    }
+
+    .sidebar__item-content {
+        display: none;
+    }
+    
+    .app_listmusic {
+        width: 0px;
+    }
+
+    .sidebar__library-content {
+        display: none;
+    }
+
+    .sidebar__nav-item.active {
+        border: none;    
+    }
+
+    .sidebar__item-content--des {
+        display: none;
+    }
+
+    .sidebar__nav-item {
+        padding: 0;
+        justify-content: center;
+        height: 54px;
+    }
+    
+    .sidebar__item-play {
+        display: none;
+    }
+
+    .sidebar__nav-item.active {
+        border: 0;
+        padding: 0;
+    }
+
+    .sidebar__horizontal {
+        margin: 30px 0;
+    }
+
+    .sidebar__nav-item--play {
+        display: none;
+    }
+
+    .sidebar__library {
+        margin-left: 0px;
+        padding-top: 30px;
+        border-top: 2px solid  var(--border-primary);
+    }
+
+    .sidebar__library-icon {
+        padding-right: 0px;
+    }
+
+    .sidebar__library-item  {
+         padding-right: 0px;
+         justify-content: center;
+         height: 50px;
+    }
+
+    .sidebar__plus {
+        padding: 0;
+        justify-content: center;
+        margin: 20px 0;
+        border: none;
+    }
+    
+    .sidebar__plus-expand {
+        display: flex;
+    }
+
+    .sidebar__logo-mini {
+        display: flex;
+    }
+    
+    .sidebar__nav-list {
+        width: 100%;
+    }
+
+    /* Heading-search */
+    .app__search-input {
+        width: 300px;
+    }
+
+    .app__setting-item--expand {
+        display: none;
+    }
+
+    .app__main-navbar--item {
+        font-size: 1.4rem;
+        padding: 6px 20px;
+    }
+
+}   
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    :root {
+        --player-height: 80px;
+    }
+
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app__sidebar {
+        width: 100%;
+        flex-direction: column;
+        bottom: 0;
+        position: fixed;
+    }
+
+    .sidebar__logo {
+        display: none;
+    }
+    
+    .sidebar__nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        padding-top: 10px;
+    }
+
+    .sidebar__nav-item {
+        padding: 0px;
+        height: 56px;
+    }
+
+    .sidebar__nav-item.active {
+        border: none;  
+        padding: 0;  
+    }
+
+    .sidebar__item-text {
+        flex-direction: column;
+        width: 100%;
+        color: var(--white-color);
+        height: 100%;
+    }
+
+    .sidebar__item-icon {
+        font-size: 1.4rem;
+    }
+
+    .sidebar__item-content {
+        min-width: max-content;
+        padding: 0;
+        font-size: 10px;
+        padding-top: 4px;
+    }
+
+    .sidebar__plus {
+        display: none;
+    }
+
+    /* Heading - search */
+
+    .app {
+        background-color: aqua;
+        height: 100%;
+    }
+
+    .app__container {
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+
+    .app__container-heading {
+        padding: 10px;
+        height: 65px;
+    }
+    .app__search-btn {
+        display: none;
+    }
+    .app__search-input {
+       margin: 0;
+       width: 250px
+    }
+
+    .app__private-item {
+        height: 30px;
+        width: 30px;
+    }
+
+    .app__avatar {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    
+    .app__setting-item--expand {
+        display: none;
+    }
+
+    .app__private-setting {
+        margin-top: 51px;
+    }
+
+    .app__main-navbar {
+        margin-top: 24px;
+    }
+
+    .app__main-navbar--item {
+        font-size: 1rem;
+        padding: 4px 20px;
+    }
+
+    .content__control-header--title {
+        font-size: 2rem;
+    }
+
+    .player {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 46px;
+        left: 0;
+        justify-content: flex-start;
+    }
+
+    .player__song {
+        width: 40%;
+        z-index: 100;
+    }
+
+    .player__progress-time {
+        display: none;
+    }
+
+    .player__progress {
+        width: 60%;
+    }
+
+    .home__song-img {
+        display: none;
+    }
+
+    .home__song-list {
+        margin-left: 0;
+    }
+
+    .zingchart__item-description {
+        width: 100%;
+    }
+
+    .app__song-heading {
+        display: none;
+    }
+
+    .week__item-number {
+        width: 50px;
+    }
+
+    .app__main-content--item {
+        margin-bottom: 30px;
+    }
+
+    .app__main-item {
+        margin-bottom: 60px;
+    }
+}
+
+
+
+/*Mini - mobile */
+@media (max-width: 352px) {
+    .app__search-input {
+       margin: 0;
+       width: 180px
+    }
+    
+    .app__setting-item--expand {
+        display: none;
+    }
+
+
+}
+
+
+

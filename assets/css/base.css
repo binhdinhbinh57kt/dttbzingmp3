@@ -1,0 +1,234 @@
+:root {
+    --sidebar-wight: 240px;
+    --player-height: 90px;
+    --sidebar-color: rgb(35,27,46);
+    --listmusic-wight: 329px;
+    --listmusic-color: rgb(23,15,35);
+    --container-color: rgb(23,15,35);
+    --heart-color: rgb(114,0,161);
+    --bordernav-color: rgb(114,0,161);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: rgb(203, 198, 198);
+    --border-primary: rgb(58,51,68);
+    --heading-color: rgb(47,39,57);
+    --heading-height: 70px;
+    --primary-color: rgb(114,0,161);
+    --red-color: rgb(255,0,0);
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home__song-list::-webkit-scrollbar,
+.app__container-main::-webkit-scrollbar,
+.sidebar__subnav::-webkit-scrollbar {
+    width: 4px;
+}
+
+.home__song-list::-webkit-scrollbar-thumb,
+.app__container-main::-webkit-scrollbar-thumb,
+.sidebar__subnav::-webkit-scrollbar-thumb {
+    background-color: #645F6C;
+    border-radius: 10px;
+}
+
+.app__more {
+    color: var(--white-color);
+}
+
+.app__more-icon,
+.app__lyric-icon,
+.app__heart {
+    cursor: pointer;
+}
+
+.app__more-icon,
+.app__lyric-icon,
+.app__heart-des {
+    font-size: 1.6rem;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.app__more-icon:hover,
+.app__lyric-icon:hover,
+.app__heart-des:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.app__heart--notaction {
+    color: var(--white-color);
+    display: block;
+}
+
+.app__heart--action {
+    color: var(--primary-color);
+    display: none;
+}
+
+.app__music-more {
+    font-size: 1.6rem;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.app__music-more:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.music__more-item {
+    width: 200px;
+}
+
+
+.item__img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.item__img:hover .img__actions {
+    display: flex;
+}
+
+.img__actions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.item__img img {
+    width: 100%;
+    background-size: auto;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+}
+
+.item__img:hover img {
+    transform: scale(1.15);
+    opacity: 0.8;
+    display: block;
+}
+
+.item__img-play {
+    font-size: 2rem;
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.item__img-play:hover {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.content__action-left {
+    margin-right: 20px;
+    padding: 2px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.content__action-right {
+    padding: 2px;
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.item__img-name {
+    margin-top: 10px;
+}
+.item__img-name--item {
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.item__img-name--item:hover {
+    color: #c662ef;
+}
+
+.item__img-name--author {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.item__img-name--author a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.item__img-name--author a:hover {
+    color: #c662ef;
+    text-decoration: underline;
+}
+
+.item__img-name--des {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.no-wrap {
+    display: flex;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap !important;
+    will-change: scroll-position;
+    overflow: overlay hidden !important;
+}
+
+
+
+.no-wrap::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+}
