@@ -14,10 +14,10 @@ const randomBtn = $('.player__action-random')
 const repeatBtn = $('.player__action-repeat')
 const songTime = $('.song__total-time')
 const songVolume = $('.volume__progress')
-
-
-
-
+const songVolumeIcon = $('.song__volume-icon')
+const songFollowTime = $('.song__follow-time')
+const volumeTrack = $('.volume__track')
+const songTrack = $('.song__track')
 
 
 const songApp = {
@@ -25,6 +25,7 @@ const songApp = {
     isPlaying: false,
     isRandom: false,
     isRepeat: false,
+    isVolume: false,
     songs: [
         {
             namesong: 'Ngày khác lạ',
@@ -38,7 +39,7 @@ const songApp = {
             namesong: 'Thanh Xuân',
             nameauthor: 'Da LAB',
             img: './assets/img/song/song_list/song_item2.jpg',
-            time: '04:01',
+            time: '03:40',
             song: './assets/music/mysong/mysong2.mp3'
         },
         {
@@ -59,7 +60,7 @@ const songApp = {
             namesong: 'Cùng Anh',
             nameauthor: 'Ngọc Dolil, Hagi, Stee',
             img: './assets/img/song/song_list/song_item5.jpg',
-            time: '03:18',
+            time: '03:17',
             song: './assets/music/mysong/mysong5.mp3'
         },
         {
@@ -73,21 +74,21 @@ const songApp = {
             namesong: 'Trên tình bạn dưới tình yêu',
             nameauthor: 'Min, Typ16',
             img: './assets/img/song/song_list/song_item7.jpg',
-            time: '03:36',
+            time: '03:19',
             song: './assets/music/mysong/mysong7.mp3'
         },
         {
             namesong: 'Vì mẹ anh bắt chia tay',
             nameauthor: 'Miu Lê, Karik, Châu Đăng Khoa',
             img: './assets/img/song/song_list/song_item8.jpg',
-            time: '03:36',
+            time: '03:22',
             song: './assets/music/mysong/mysong8.mp3'
         },
         {
             namesong: 'Từ chối nhẹ nhàng thôi',
             nameauthor: 'Bích Phương, Phúc Du',
             img: './assets/img/song/song_list/song_item9.jpg',
-            time: '03:36',
+            time: '04:06',
             song: './assets/music/mysong/mysong9.mp3'
         }
     ],
@@ -138,6 +139,7 @@ const songApp = {
         })
         songList.innerHTML = htmlsListSongs.join('')
         
+        
     },
 
     defineProperties: function() {
@@ -151,8 +153,18 @@ const songApp = {
     handleEvents: function() {
         const _this = this
 
+        // Chuyển từ s sang HHMMSS
+        const toHHMMSS = function(secs)  {
+            var sec_num = parseInt(secs, 10)
+            var hours   = Math.floor(sec_num / 3600)
+            var minutes = Math.floor(sec_num / 60) % 60
+            var seconds = sec_num % 60
+            return [hours,minutes,seconds]
+                .map(v => v < 10 ? "0" + v : v)
+                .filter((v,i) => v !== "00" || i > 0)
+                .join(":")
+        }
         
-
         // Xử lý CD quay/dừng
         const cdThumbanimae = songImg.animate([
             {transform: 'rotate(360deg)'}
@@ -175,14 +187,14 @@ const songApp = {
         audio.onplay = function() {
             _this.isPlaying = true
             playerProgress.classList.add('playing__progress')
-            cdThumbanimae.play()
+            cdThumbanimae.play()           
         }
 
         // Khi song bị pause
         audio.onpause = function() {
             _this.isPlaying = false
             playerProgress.classList.remove('playing__progress')
-            cdThumbanimae.pause() 
+            cdThumbanimae.pause()            
         }
 
         // Khi tiến độ bài hát thay đổi
@@ -190,7 +202,10 @@ const songApp = {
             if (audio.duration) {
                 const songProgressPercent = Math.floor(audio.currentTime / audio.duration * 100)
                 songProgress.value = songProgressPercent
+                songTrack.style.width = songProgressPercent + '%'
+               
             }
+            songFollowTime.innerHTML = toHHMMSS(audio.currentTime)
         }
 
         // Xử lý volume song
@@ -198,6 +213,19 @@ const songApp = {
             if (e.target.value != audio.volume*100) {
                 const volumeCurrent = e.target.value/100;
                 audio.volume = volumeCurrent
+                songVolumeIcon.classList.remove('volume__active')
+                volumeTrack.style.width = e.target.value + '%' 
+            }
+        }
+
+        // Xử lý bấm nút mute volume
+        songVolumeIcon.onclick = function() {
+            if (audio.volume != 0) {
+                audio.volume = 0
+                songVolumeIcon.classList.add('volume__active')
+            } else {
+                songVolumeIcon.classList.remove('volume__active')
+                audio.volume = songVolume.value/100
             }
         }
 
@@ -214,7 +242,7 @@ const songApp = {
             } else {
                 _this.nextSong()
             }
-            audio.play()
+            audio.play() 
             _this.render()
             _this.scrollToActiveSong()
         }
@@ -234,8 +262,7 @@ const songApp = {
         // Xủ lý random bật tắt
         randomBtn.onclick = function() {
             _this.isRandom = !_this.isRandom
-            randomBtn.classList.toggle('random__active',_this.isRandom)
-            
+            randomBtn.classList.toggle('random__active',_this.isRandom) 
         }
 
         // Xử lý next song khi audio ended 
@@ -247,7 +274,7 @@ const songApp = {
             }
         }
 
-        // Xy ly repeat song
+        // Xử lý repeat song
         repeatBtn.onclick = function() {
             _this.isRepeat = !_this.isRepeat
             repeatBtn.classList.toggle('repeat__active',_this.isRepeat)
@@ -267,11 +294,10 @@ const songApp = {
         }
 
         
-        
-        
-        
+      
     },
 
+    // Xử lý load song
     scrollToActiveSong: function() {
         setTimeout(() => {
             $('.home__song-item.active').scrollIntoView({
@@ -290,6 +316,7 @@ const songApp = {
         songTime.textContent = this.currentSong.time
         songImg.src = this.currentSong.img
     },
+
 
     nextSong: function() {
         this.currentIndex++
@@ -331,8 +358,6 @@ const songApp = {
         // Render playlist
         this.render()
 
-       
-        
     }
 }
 

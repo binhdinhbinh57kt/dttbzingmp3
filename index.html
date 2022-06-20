@@ -956,7 +956,11 @@
             </div>
             <div class="player__progress-time">
                 <div class="song__follow-time">00:00</div>
-                <input id="song__progress" class="song__progress" type="range" value="0" step="1" min="0" max="100">
+                <div class="song__progress-des">
+                    <input id="song__progress" class="song__progress" type="range" value="0" step="1" min="0" max="100">
+                    <div class="song__track"></div>
+                </div>
+                
                 <div class="song__total-time">04:30</div>
                 <audio class="audio" src=""></audio>
             </div>
@@ -974,9 +978,14 @@
                 <div class="song__option-description song__screen-description">Chế độ cửa sổ</div>
             </div>
             <div class="song__option-item song__option-volume">
-                <i class="song__volume-icon ti-volume"></i>
+                <div class="song__volume-icon song__option-volume--icon">
+                    <i class="song__volume-icon--have ti-volume"></i>
+                    <i class="song__volume-icon--nothave fa-solid fa-volume-xmark"></i>
+                </div>
+                
                 <div class="song__volume-progress">
-                    <input id="volume__progress" class="volume__progress" type="range" value="0" step="1" min="0" max="100">
+                    <input id="volume__progress" class="volume__progress" type="range" value="100" step="1" min="0" max="100">
+                    <div class="volume__track" ></div>
                 </div>
             </div>
         </div>
