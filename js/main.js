@@ -7,6 +7,27 @@ const appHeartActions = $$('.app__heart--action')
 const tabHomeItemsTitles = $$('.home__item-title')
 const zingChartExpandBtn = $('.zingchart__expand-btn')
 const zingChartItems = $$('.zingchart__item')
+
+
+const songImgs = $$('.home__song-item--description')
+const songPlays = $$('.song__img-play')
+const songPlayings = $$('.song__img-playing')
+
+songImgs.forEach((songImg,index) => {
+    const songPlay = songPlays[index]
+    const songPlaying = songPlayings[index]
+    songImg.onclick = function() {
+        if(songPlaying.style.display = "none") {
+            songPlaying.style.display = "block"
+            songPlay.style.display = "none"
+        }
+    }
+})
+
+
+
+
+
 appHeartNoactions.forEach((appHeartNoaction,index) => {
     const appHeartAction = appHeartActions[index]
     appHeartNoaction.onclick = function() {
@@ -41,7 +62,6 @@ artistActionDontCares.forEach((artistActionDontCare,index) => {
 artistActionCares.forEach((artistActionCare,index) => {
     const  artistActionDontCare =  artistActionDontCares[index]
     artistActionCare.onclick = function() {
-        console.log(123)
         if(artistActionDontCare.style.display = "none") {
             artistActionDontCare.style.display = "block"
             artistActionCare.style.display = "none"

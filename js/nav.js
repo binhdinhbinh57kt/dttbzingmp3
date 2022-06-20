@@ -15,6 +15,8 @@ const settingAvatarList =  $('.app__avatar-list')
 const settingAvatarItems = $$('.app__avatar-item')
 const appMainItems = $$('.app__main-item')
 
+
+
 navItems.forEach((navitem,index) => {
     const appMainItem = appMainItems[index]
 
@@ -84,4 +86,5 @@ settingChildItems.forEach((settingChildItem,index) => {
         e.stopPropagation()
     }
 })
+
 

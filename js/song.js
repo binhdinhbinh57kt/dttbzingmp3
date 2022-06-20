@@ -13,8 +13,11 @@ const preBtn = $('.player__action-back')
 const randomBtn = $('.player__action-random')
 const repeatBtn = $('.player__action-repeat')
 const songTime = $('.song__total-time')
-const homeSongImg = $('.home__song-item--img')
-const songItem = $('.home__song-item')
+const songVolume = $('.volume__progress')
+
+
+
+
 
 
 const songApp = {
@@ -134,7 +137,7 @@ const songApp = {
             `
         })
         songList.innerHTML = htmlsListSongs.join('')
-
+        
     },
 
     defineProperties: function() {
@@ -147,6 +150,8 @@ const songApp = {
 
     handleEvents: function() {
         const _this = this
+
+        
 
         // Xử lý CD quay/dừng
         const cdThumbanimae = songImg.animate([
@@ -188,8 +193,16 @@ const songApp = {
             }
         }
 
+        // Xử lý volume song
+        songVolume.oninput = function(e) {
+            if (e.target.value != audio.volume*100) {
+                const volumeCurrent = e.target.value/100;
+                audio.volume = volumeCurrent
+            }
+        }
+
         // Xử lý khi tua song
-        songProgress.onchange = function(e) {
+        songProgress.oninput = function(e) {
             const seekTime = audio.duration/100 * e.target.value
             audio.currentTime = seekTime
         }
@@ -246,18 +259,17 @@ const songApp = {
             if(
                 songNode && e.target.closest('.song__img-play')
             ) {         
-                console.log(songNode)
                 _this.currentIndex = Number(songNode.getAttribute('data-index'))
                 _this.loadCurrentSong()
                 _this.render()
                 audio.play()
             }
         }
-        
-        homeSongImg.onclick = function(e) {
-            console.log(homeSongImg)
-        }
 
+        
+        
+        
+        
     },
 
     scrollToActiveSong: function() {
@@ -318,7 +330,11 @@ const songApp = {
 
         // Render playlist
         this.render()
+
+       
+        
     }
 }
+
 
 songApp.start()
