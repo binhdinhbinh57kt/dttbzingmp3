@@ -77,6 +77,6 @@ const exploreYouHeard = {
         this.render()
     }
 }
-exploreYouHeard.start()
 
+export default exploreYouHeard;
 

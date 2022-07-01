@@ -82,4 +82,5 @@ const zingChartUSUK = {
         this.render()
     }
 }
-zingChartUSUK.start()
+
+export default zingChartUSUK;

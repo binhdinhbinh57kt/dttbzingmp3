@@ -86,6 +86,6 @@ const exploreEvent = {
         this.render()
     }
 }
-exploreEvent.start()
 
+export default exploreEvent;
 

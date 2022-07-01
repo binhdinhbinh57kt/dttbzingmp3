@@ -82,4 +82,4 @@ const zingChartVN = {
         this.render()
     }
 }
-zingChartVN.start()
+export default zingChartVN;

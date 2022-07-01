@@ -64,4 +64,6 @@ const exploreHeard = {
         this.render()
     }
 }
-exploreHeard.start()
+
+
+export default exploreHeard;

@@ -18,6 +18,7 @@ const songVolumeIcon = $('.song__volume-icon')
 const songFollowTime = $('.song__follow-time')
 const volumeTrack = $('.volume__track')
 const songTrack = $('.song__track')
+const songPlayAll = $('.content__actions-playall')
 
 
 const songApp = {
@@ -293,8 +294,13 @@ const songApp = {
             }
         }
 
-        
-      
+        // Xử lý khi bấm nút play all
+        songPlayAll.onclick = function() {
+            _this.currentIndex = 0
+            _this.loadCurrentSong()
+            _this.render()
+            audio.play()
+        }
     },
 
     // Xử lý load song
@@ -307,7 +313,6 @@ const songApp = {
         }, 500)
         
     },
-
 
     loadCurrentSong: function() {
         nameSong.textContent = this.currentSong.namesong
@@ -344,7 +349,6 @@ const songApp = {
         this.loadCurrentSong()
     },
 
-
     start: function() {
         // Định nghĩa các thuộc tính cho object
         this.defineProperties()
@@ -361,5 +365,4 @@ const songApp = {
     }
 }
 
-
-songApp.start()
+export default songApp;

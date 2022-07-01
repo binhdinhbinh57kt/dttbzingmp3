@@ -122,4 +122,4 @@ const homeMv = {
     }
 }
 
-homeMv.start()
+export default homeMv;

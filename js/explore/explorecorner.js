@@ -64,4 +64,5 @@ const exploreCorner = {
         this.render()
     }
 }
-exploreCorner.start()
+
+export default exploreCorner;

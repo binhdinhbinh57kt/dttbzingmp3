@@ -128,4 +128,5 @@ const homeArtist = {
     }
 }
 
-homeArtist.start()
+
+export default homeArtist;

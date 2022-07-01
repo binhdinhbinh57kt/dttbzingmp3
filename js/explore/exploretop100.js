@@ -57,4 +57,5 @@ const exploreTop = {
         this.render()
     }
 }
-exploreTop.start()
+
+export default exploreTop;

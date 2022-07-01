@@ -64,4 +64,5 @@ const exploreChoose = {
         this.render()
     }
 }
-exploreChoose.start()
+
+export default exploreChoose;

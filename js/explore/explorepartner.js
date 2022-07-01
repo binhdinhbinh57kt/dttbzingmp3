@@ -39,6 +39,7 @@ const explorePartner = {
         this.render()
     }
 }
-explorePartner.start()
+
+export default explorePartner;
 
 

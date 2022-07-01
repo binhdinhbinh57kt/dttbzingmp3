@@ -28,4 +28,5 @@ const exploreZingChart = {
         this.render()
     }
 }
-exploreZingChart.start()
+
+export default exploreZingChart;

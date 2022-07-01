@@ -83,4 +83,5 @@ const exploreRadio = {
         this.render()
     }
 }
-exploreRadio.start()
+
+export default exploreRadio;

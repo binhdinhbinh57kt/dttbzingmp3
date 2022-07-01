@@ -71,4 +71,6 @@ const exploreMixtage = {
         this.render()
     }
 }
-exploreMixtage.start()
+
+
+export default exploreMixtage;

@@ -104,4 +104,5 @@ const homeAlbum = {
         this.render()
     }
 }
-homeAlbum.start()
+
+export default homeAlbum;

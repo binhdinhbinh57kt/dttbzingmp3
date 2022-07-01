@@ -65,6 +65,7 @@ const exploreNewMusic = {
         this.render()
     }
 }
-exploreNewMusic.start()
+
+export default exploreNewMusic;
 
 

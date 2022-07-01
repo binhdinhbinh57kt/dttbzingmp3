@@ -1,3 +1,90 @@
+// HOME
+import homeAlbum from './home/homealbum.js'
+import homeArtist from './home/homeartist.js'
+import homeMv from './home/homemv.js'
+import homePlaylist from './home/homeplaylist.js'
+
+// EXPLORE
+import exploreCanHear from './explore/explorecanhear.js'
+import exploreChoose from './explore/explorechoose.js'
+import exploreCorner from './explore/explorecorner.js'
+import exploreEvent from './explore/exploreevent.js'
+import exploreHeard from './explore/exploreheard.js'
+import exploreMixtage from './explore/exploremixtape.js'
+import exploreRadio from './explore/exploreradio.js'
+import exploreNewDay from './explore/explorenewday.js'
+import exploreZingChart from './explore/explorezingchart.js'
+import exploreZma from './explore/explorezma.js'
+import exploreNewMusic from './explore/explorenewmusic.js'
+import exploreTop from './explore/exploretop100.js'
+import exploreYouHeard from './explore/exploreyouheard.js'
+import explorePartner from './explore/explorepartner.js'
+
+// ZINGCHART
+import zingChartUSUK from './zingchart/ziingchartUSUK.js'
+import zingChartVN from './zingchart/zingchartVN.js'
+import zingChartKPOP from './zingchart/zingchartKPOP.js'
+import zingChartTop from './zingchart/zingcharttop.js'
+
+// THEME 
+import topicLight from './themes/light.js'
+import topicDark from './themes/dark.js'
+import topicMusican from './themes/musican.js'
+import topicTopic from './themes/topic.js'
+import topicDynamic from './themes/dynamic.js'
+// SONG APP
+import songApp from './song.js'
+
+
+
+const app = {
+    render: function() {
+        // HOME
+        homeAlbum.start()
+        homeArtist.start()
+        homeMv.start()
+        homePlaylist.start()
+
+        // EXPLORE
+        exploreCanHear.start()
+        exploreChoose.start()
+        exploreCorner.start()
+        exploreEvent.start()
+        exploreHeard.start()
+        exploreMixtage.start()
+        exploreRadio.start()
+        exploreNewDay.start()
+        exploreZingChart.start()
+        exploreZma.start()
+        exploreNewMusic.start()
+        exploreTop.start()
+        exploreYouHeard.start()
+        explorePartner.start()
+
+        // zingchart
+        zingChartTop.start()
+        zingChartUSUK.start()
+        zingChartVN.start()
+        zingChartKPOP.start()
+
+        // Theme 
+        topicDynamic.start()
+        topicTopic.start()
+        topicMusican.start()
+        topicDark.start()
+        topicLight.start()
+
+        // Song App
+        songApp.start()
+    },
+  
+    start: function() {
+        this.render()
+    }
+}
+
+app.start()
+
 const appMainNavbarItems = $$('.app__main-navbar--item')
 const appMainContentItems = $$('.app__main-content--item')
 const artistActionCares = $$('.artist__action-care')
@@ -7,11 +94,14 @@ const appHeartActions = $$('.app__heart--action')
 const tabHomeItemsTitles = $$('.home__item-title')
 const zingChartExpandBtn = $('.zingchart__expand-btn')
 const zingChartItems = $$('.zingchart__item')
-
-
 const songImgs = $$('.home__song-item--description')
 const songPlays = $$('.song__img-play')
 const songPlayings = $$('.song__img-playing')
+const appTopic = $('.app__topic')
+const appTopicBtn = $('.topic__btn')
+const appTopicMain = $('.topic__main')
+const exitTopic = $('.topic__heading-exit')
+
 
 songImgs.forEach((songImg,index) => {
     const songPlay = songPlays[index]
@@ -23,10 +113,6 @@ songImgs.forEach((songImg,index) => {
         }
     }
 })
-
-
-
-
 
 appHeartNoactions.forEach((appHeartNoaction,index) => {
     const appHeartAction = appHeartActions[index]
@@ -501,3 +587,22 @@ function showZingChart() {
 }
 
 showZingChart()
+
+
+
+// Close topic
+exitTopic.onclick = function() {
+    appTopic.style.display = "none"
+}
+
+appTopicBtn.onclick = function() {
+    appTopic.style.display = "flex"
+}
+
+appTopic.onclick = function() {
+    appTopic.style.display = "none"
+}
+
+appTopicMain.onclick = function(e) {
+    e.stopPropagation()
+}

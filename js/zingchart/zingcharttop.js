@@ -155,4 +155,5 @@ const zingChartTop = {
         this.render()
     }
 }
-zingChartTop.start()
+
+export default zingChartTop;

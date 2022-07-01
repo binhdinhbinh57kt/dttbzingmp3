@@ -49,4 +49,6 @@ const exploreZma = {
         this.render()
     }
 }
-exploreZma.start()
+
+
+export default exploreZma;

@@ -76,4 +76,6 @@ const exploreCanHear = {
         this.render()
     }
 }
-exploreCanHear.start()
+
+
+export default exploreCanHear;

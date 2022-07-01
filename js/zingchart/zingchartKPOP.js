@@ -82,4 +82,4 @@ const zingChartKPOP = {
         this.render()
     }
 }
-zingChartKPOP.start()
+export default zingChartKPOP;

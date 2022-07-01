@@ -98,15 +98,13 @@ const homePlaylist = {
             `
         })
 
-        $('.hometabplaylist').innerHTML = $('.hometabplaylist').innerHTML + htmlHomeTabPlayLists.join('')
-        
-
-    
+        $('.hometabplaylist').innerHTML = $('.hometabplaylist').innerHTML + htmlHomeTabPlayLists.join('')   
     },
     start: function() {
         this.render()
     }
 }
 
-homePlaylist.start()
+
+export default homePlaylist;
 

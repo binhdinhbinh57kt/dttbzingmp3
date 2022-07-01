@@ -77,6 +77,6 @@ const exploreNewDay = {
         this.render()
     }
 }
-exploreNewDay.start()
 
+export default exploreNewDay;
 
